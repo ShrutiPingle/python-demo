@@ -94,20 +94,73 @@
 # else: 
 #   print(f"{year} is NOT a leap year")
 
-numA=int(input("enter no.1 "))
-numB=int(input("enter no.2 "))
-calc=input("enter action; add, sub, div, mul: ")
-match calc:
-  case 'add':
-    print(f"{numA} + {numB} = {numA+numB}")
-  case 'sub':
-    print(f"{numA} - {numB} = {numA-numB}")
-  case 'div':
-    if numB!=0:
-      print(f"{numA} / {numB} = {numA/numB}")
-    else:
-      print(f"0 cannot divide {numA}")
-  case 'mul':
-    print(f"{numA} x {numB} = {numA*numB}")
-  case _:
-    print("invalid action")
+# numA=int(input("enter no.1 "))
+# numB=int(input("enter no.2 "))
+# calc=input("enter action; add, sub, div, mul: ")
+# match calc:
+#   case 'add':
+#     print(f"{numA} + {numB} = {numA+numB}")
+#   case 'sub':
+#     print(f"{numA} - {numB} = {numA-numB}")
+#   case 'div':
+#     if numB!=0:
+#       print(f"{numA} / {numB} = {numA/numB}")
+#     else:
+#       print(f"0 cannot divide {numA}")
+#   case 'mul':
+#     print(f"{numA} x {numB} = {numA*numB}")
+#   case _:
+#     print("invalid action")
+
+#    *
+#   ***
+#  *****
+# *******
+# n=10
+# for i in range(1,n+1):
+#   for j in range(1,(n-i)+1):
+#     print(" ", end ="")
+#   for k in range(1,(i*2)):
+#     print("*", end="")
+#   print()
+    
+# nA= int(input("enter number: "))
+# count=0
+# if nA<10:
+#   print("count = 1")
+# elif nA==10:
+#   print("count = 2")
+# else:
+#   while nA>=1:
+#     nA=nA/10
+#     # print(nA)
+#     count=count+1
+#   print(f"count = {count}")
+
+# num = int(input("enter a number:"))
+# rev_num=0
+# while num>0:
+#   dig=num%10
+#   rev_num= (rev_num*10)+dig
+#   num=num//10
+# print(rev_num)
+
+# vector:
+# class Vector:
+#     def __init__(self, x: float, y: float, width: float, height: float):
+#         self.x = x
+#         self.y = y
+#         self.width = width
+#         self.height = height
+
+#add value of evey even-index
+# a=[10,20,30,40,50]
+# sum=0
+# for i in a:
+#     if(a.index(i)%2==0):
+#         sum+=i
+# print(sum)
+
+# yerr=1900
+# if yerr%4==0 and yerr%400==0:
+#     print(f"{yerr} is a leap year")
