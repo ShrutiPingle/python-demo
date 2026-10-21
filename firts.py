@@ -164,3 +164,32 @@
 # yerr=1900
 # if yerr%4==0 and yerr%400==0:
 #     print(f"{yerr} is a leap year")
+
+# n=25
+# sn=str(n)
+# lar=0
+# for i in sn:
+#   #print(i)
+#   if int(i)>lar:
+#       lar=int(i)
+#       print(lar)
+
+# def countfreq(n):
+#   freq=[0]*10
+#   while(n!=0):
+#     lastd=n%10
+#     freq[lastd]+=1
+#     n//=10
+#   return freq
+# n=13464987139
+# res=countfreq(n)
+# for i in range(len(res)):
+#   print(f"{i}-> {res[i]}")
+
+def (n):
+  freq=[0]*10
+  while(n!=0):
+    lastd=n%10
+    freq[lastd]+=1
+    n//=10
+  return freq
