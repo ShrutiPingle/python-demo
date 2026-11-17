@@ -186,10 +186,36 @@
 # for i in range(len(res)):
 #   print(f"{i}-> {res[i]}")
 
-def (n):
+# def anagram(n1,n2):
+#   freqn1=[0]*10
+#   while(n1!=0):
+#     lastd=n1%10
+#     freqn1[lastd]+=1
+#     n1//=10
+
+#   freqn2=[0]*10
+#   while(n2!=0):
+#     lastd=n2%10
+#     freqn2[lastd]+=1
+#     n2//=10
+#   return freqn1==freqn2
+
+# print(anagram(1212,1122))
+
+def freqKcheck(n,k):
   freq=[0]*10
   while(n!=0):
     lastd=n%10
     freq[lastd]+=1
     n//=10
-  return freq
+  
+  arr=[]
+  cnt=0
+  for i in freq:
+    if i>=k:
+      arr.append(cnt)
+    cnt+=1
+  return arr
+
+n=1213521333215
+print(freqKcheck(n,3))
