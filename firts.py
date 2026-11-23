@@ -202,20 +202,50 @@
 
 # print(anagram(1212,1122))
 
-def freqKcheck(n,k):
-  freq=[0]*10
-  while(n!=0):
-    lastd=n%10
-    freq[lastd]+=1
-    n//=10
+# def freqKcheck(n,k):
+#   freq=[0]*10
+#   while(n!=0):
+#     lastd=n%10
+#     freq[lastd]+=1
+#     n//=10
   
-  arr=[]
-  cnt=0
-  for i in freq:
-    if i>=k:
-      arr.append(cnt)
-    cnt+=1
-  return arr
+#   arr=[]
+#   cnt=0
+#   for i in freq:
+#     if i>=k:
+#       arr.append(cnt)
+#     cnt+=1
+#   return arr
 
-n=1213521333215
-print(freqKcheck(n,3))
+# n=1213521333215
+# print(freqKcheck(n,3))
+
+# arr = [10,20,30,40,50,60]
+# r = 2
+
+# temparr = []
+
+# for i in range(r):
+#     temparr.append(arr[i])
+
+# for i in range(len(arr)-r):
+#     arr[i] = arr[i+r]
+
+# for i in range(r):
+#     arr[len(arr)-r+i] = temparr[i]
+
+# print(arr)
+# # homework, supppose r is > len(arr)  
+
+arr=[1,0,2,3,0,4,5,0]
+# def shift(i,arr):
+#   for j in range(len(arr)-1,i,-1):
+#     arr[j]=arr[j-1]
+#   return arr
+# print(shift(2,arr))
+
+for i in range(len(arr)-1):
+  if arr[i]==0:
+    for j in range(len(arr)-1,i+1,-1):
+      arr[j]=arr[j-1]
+    
