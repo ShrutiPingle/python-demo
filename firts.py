@@ -208,7 +208,7 @@
 #     lastd=n%10
 #     freq[lastd]+=1
 #     n//=10
-  
+
 #   arr=[]
 #   cnt=0
 #   for i in freq:
@@ -216,7 +216,6 @@
 #       arr.append(cnt)
 #     cnt+=1
 #   return arr
-
 # n=1213521333215
 # print(freqKcheck(n,3))
 
@@ -237,15 +236,31 @@
 # print(arr)
 # # homework, supppose r is > len(arr)  
 
-arr=[1,0,2,3,0,4,5,0]
+# arr=[1,0,2,3,0,4,5,0]
 # def shift(i,arr):
 #   for j in range(len(arr)-1,i,-1):
 #     arr[j]=arr[j-1]
 #   return arr
 # print(shift(2,arr))
+# arr = [1,0,2,3,0,4,5,0]
 
-for i in range(len(arr)-1):
-  if arr[i]==0:
-    for j in range(len(arr)-1,i+1,-1):
-      arr[j]=arr[j-1]
-    
+# i = 0
+# while i < len(arr)-1:
+#     if arr[i] == 0:
+#         for j in range(len(arr)-1, i+1, -1):
+#             arr[j] = arr[j-1]
+#         i += 2 
+#     else:
+#         i += 1
+# print(arr)
+
+arr=[100,102,101,100,102,101]
+def freqcheck(arr):
+    dictA={}
+    for i in arr:
+        if i not in dictA:
+            dictA[i]=1
+        else:
+            dictA[i]+=1
+    return dictA
+print(freqcheck(arr))
