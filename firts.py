@@ -254,13 +254,22 @@
 #         i += 1
 # print(arr)
 
-arr=[100,102,101,100,102,101]
-def freqcheck(arr):
-    dictA={}
-    for i in arr:
-        if i not in dictA:
-            dictA[i]=1
-        else:
-            dictA[i]+=1
-    return dictA
-print(freqcheck(arr))
+# arr=[100,102,101,100,102,101]
+# def freqcheck(arr):
+#     dictA={}
+#     for i in arr:
+#         if i not in dictA:
+#             dictA[i]=1
+#         else:
+#             dictA[i]+=1
+#     return dictA
+# print(freqcheck(arr))
+
+# freq with using array for arrY, for 100 to 103
+arr=[100,102,101,103,100,102,101,103]
+freq=[0]*4
+for i in arr:
+    freq[i-100]+=1
+print(freq)
+for i in freq:
+    print(f"No. {i+100} is times: {i}")
