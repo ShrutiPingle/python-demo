@@ -274,10 +274,25 @@
 # for i in range(len(freq)):
 #     print(f"No. {i+100} is times: {freq[i]}")
 
-arr=[-4,-2,0,1,-2,1,3,-4]
-freq=[0]*9
-for i in arr:
-    freq[i+4]+=1
-print(freq)
-for i in range(len(freq)):
-    print(f"No. {i-4} is times: {freq[i]}")
+# arr=[-4,-2,0,1,-2,1,3,-4]
+# freq=[0]*9
+# for i in arr:
+#     freq[i+4]+=1
+# print(freq)
+# for i in range(len(freq)):
+#     print(f"No. {i-4} is times: {freq[i]}")
+
+# leetcode 1207:
+# class Solution:
+#     def uniqueOccurrences(self, arr: list[int]) -> bool:
+#         freq=[0]*2001
+#         for i in arr:
+#             freq[i+1000]+=1
+#         res=False
+#         for i in arr:
+#             if i in freq:
+#                 res=True
+#             else:
+#                 res=False
+#         return res
+
