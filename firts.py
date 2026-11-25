@@ -296,3 +296,15 @@
 #                 res=False
 #         return res
 
+#leetcode 1207:
+# class Solution:
+#     def uniqueOccurrences(self, arr: list[int]) -> bool:
+#         freq=[0]*2001
+#         for i in arr:
+#             freq[i+1000]+=1
+#         arrc=set()
+#         for i in freq:
+#             if i in arrc:
+#                 return True
+#             arrc.add(i)
+#         return False
