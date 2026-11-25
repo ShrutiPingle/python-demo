@@ -1,1 +1,1 @@
-int (vec1)
+freq

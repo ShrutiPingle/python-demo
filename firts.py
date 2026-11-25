@@ -266,10 +266,18 @@
 # print(freqcheck(arr))
 
 # freq with using array for arrY, for 100 to 103
-arr=[100,102,101,103,100,102,101,103]
-freq=[0]*4
+# arr=[100,102,101,103,100,102,101,103]
+# freq=[0]*4
+# for i in arr:
+#     freq[i-100]+=1
+# print(freq)
+# for i in range(len(freq)):
+#     print(f"No. {i+100} is times: {freq[i]}")
+
+arr=[-4,-2,0,1,-2,1,3,-4]
+freq=[0]*9
 for i in arr:
-    freq[i-100]+=1
+    freq[i+4]+=1
 print(freq)
-for i in freq:
-    print(f"No. {i+100} is times: {i}")
+for i in range(len(freq)):
+    print(f"No. {i-4} is times: {freq[i]}")
